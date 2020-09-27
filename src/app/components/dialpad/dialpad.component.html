@@ -1,0 +1,10 @@
+<div class="top-panel">
+  <h1>Find contacts</h1>
+  <app-number-display [dialValue]="dialValue$ | async" (backspace)="onBackspace($event)"></app-number-display>
+  <app-number-grid [dialConfig]="dialConfig" (dial)="onDial($event)"></app-number-grid>
+</div>
+
+<div class="bottom-panel">
+  <app-contact-list 
+  [contacts]="(contactList$ | async) | filterContactsByPhone: (dialValue$ | async)"></app-contact-list>
+</div>

@@ -1,0 +1,8 @@
+<div>
+  <ul class="number-grid-container">
+    <li *ngFor="let config of dialConfig" (click)="dial.emit(config[0])">
+      <span class="num">{{config[0]}}</span>
+      <span class="letters">{{config[1]}}</span>
+    </li>
+  </ul>
+</div>

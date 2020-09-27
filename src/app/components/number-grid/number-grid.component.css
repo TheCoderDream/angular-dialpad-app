@@ -1,0 +1,46 @@
+
+.number-grid-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.number-grid-container li {
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.5);
+  padding: 5px;
+  cursor: pointer;
+  flex: 1 0 25%;
+}
+
+.number-grid-container li:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+.number-grid-container li span {
+  display: block;
+}
+
+.number-grid-container li span.num {
+  font-size: 20px;
+  min-height: 24px;
+  line-height: 24px;
+}
+
+.number-grid-container li span.letters {
+  font-size: 8px;
+  min-height: 10px;
+  line-height: 10px;
+}
+
+
+.number-grid-container li span.letters:empty:before {
+  content: "\200b";
+}

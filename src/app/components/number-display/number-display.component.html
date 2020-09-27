@@ -1,0 +1,8 @@
+<div>
+  <a class="backspace" *ngIf="dialValue.length" (click)="backspace.emit($event)">
+    <img src="/assets/icons/delete.svg" />
+  </a>
+  <p>
+    {{dialValue}}
+  </p>
+</div>
