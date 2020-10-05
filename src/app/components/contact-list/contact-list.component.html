@@ -2,7 +2,7 @@
   <div *ngFor="let contact of contacts" class="list-item">
     <div class="person">
         <img 
-        [src]="'/assets/thumbnails/' + contact.name + '.jpg'"
+        [src]="'.assets/thumbnails/' + contact.name + '.jpg'"
         [alt]="contact.name"
         class="avatar">
     <span class="name">{{contact.name}}</span>
